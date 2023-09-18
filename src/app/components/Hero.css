@@ -1,0 +1,154 @@
+/* Hero.css */
+/* Hero.css */
+
+/* Hero.css */
+
+.hero {
+  background: linear-gradient(0deg, #1a1a33, rgba(26, 32, 44, 0.99));
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.hero-content {
+  max-width: calc(100vw - 20px); /* 100vw é a largura da janela atual, subtrai 20px */
+  margin: 0 auto; /* Centraliza horizontalmente o conteúdo */
+  text-align: center; /* Alinhamento horizontal no centro */
+  display: flex;
+  flex-direction: column; /* Para centralizar verticalmente */
+  justify-content: center; /* Para centralizar verticalmente */
+  animation: moveDown 1.5s ease forwards;
+}
+
+  
+.hero-description {
+  text-align: left; /* Alinha o texto dos parágrafos à esquerda */
+  max-width: calc(100vw - 20px); /* Define uma largura máxima para o texto para evitar que ele fique muito largo na tela */
+  margin: 0 auto; /* Centraliza horizontalmente o texto dos parágrafos */
+}
+  
+  .service-list {
+    list-style: disc;
+    margin-left: 20px;
+  }
+
+.employee-grid {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha se não couberem na largura da janela */
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  margin-top: 20px;
+  max-width: calc(100vw - 20px); /* Define uma largura máxima que é 20px menor que a largura da janela atual */
+}
+
+.employee {
+  text-align: center;
+  width: 200px; /* Largura desejada para o retângulo de fundo */
+  height: 250px; /* Altura desejada para o retângulo de fundo */
+  border-radius: 10px; /* Bordas arredondadas */
+  align-items: center; /* Pode ser usado para centralizar a imagem verticalmente */
+  justify-content: center; /* Pode ser usado para centralizar a imagem horizontalmente */
+  background-color: #606075; /* Cor de fundo cinza */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: transform 0.2s, background-color 0.2s; /* Adicione uma transição suave para 'transform' e 'background-color' */
+  margin: 10px; /* Adicione margem entre os elementos */
+}
+
+.employee:hover {
+  transform: translateY(-5px); /* Move o elemento para cima quando o mouse passa por cima */
+  background-color: #f261a5; /* Cor de fundo rosa quando o mouse está sobre o elemento */
+}
+  
+  .hero h1 {
+    font-family: Arial, sans-serif; /* Fonte preferencial, seguida de fontes genéricas sans-serif */
+    color: #1a1a33; /* Cor de texto predominante */
+    font-size: 36px; /* Tamanho desejado para o título */
+
+  }
+  
+  .hero p {
+    color: #868686; /* Cor desejada para os parágrafos */
+    font-family: 'Helvetica', sans-serif; /* Fonte desejada para os parágrafos */
+    font-size: 18px; /* Tamanho desejado para os parágrafos */
+
+  }
+  .hero h4 {
+    color: #1d1d1d; /* Cor desejada para os parágrafos */
+    font-family: 'Helvetica', sans-serif; /* Fonte desejada para os parágrafos */
+    font-size: 18px; /* Tamanho desejado para os parágrafos */
+
+  }
+  
+  .hero h2 {
+    color: #E61B7Bad; /* Cor desejada para os subtítulos */
+    font-family: 'Verdana', sans-serif; /* Fonte desejada para os subtítulos */
+    font-size: 24px; /* Tamanho desejado para os subtítulos */
+
+  }
+  
+  .hero li {
+    color: #868686; /* Cor desejada para as listas */
+  }
+  
+.texto-com-contorno {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* Cor do texto */
+  text-shadow:
+    -1px -1px 0 #E61B7B, /* Sombra superior esquerda */
+    1px -1px 0 #E61B7B,  /* Sombra superior direita */
+    -1px 1px 0 #E61B7B,  /* Sombra inferior esquerda */
+    1px 1px 0 #E61B7B;   /* Sombra inferior direita */
+}
+
+.produtos-grid {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha se não couberem na largura da janela */
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  margin-top: 20px;
+  max-width: calc(100vw - 20px); /* Define uma largura máxima que é 20px menor que a largura da janela atual */
+}
+
+.produtos {
+  text-align: center;
+  width: 350px; /* Largura desejada para o retângulo de fundo */
+  height: 250px; /* Altura desejada para o retângulo de fundo */
+  border-radius: 50px; /* Bordas arredondadas */
+  align-items: center; /* Pode ser usado para centralizar a imagem verticalmente */
+  justify-content: center; /* Pode ser usado para centralizar a imagem horizontalmente */
+  background-color: #606075; /* Cor de fundo cinza */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: transform 0.4s, background-color 0.2s; /* Adicione uma transição suave para 'transform' e 'background-color' */
+  margin: 10px; /* Adicione margem entre os elementos */
+}
+
+.produtos:hover {
+  animation: moveProdutos 1.5s ease forwards; /* Move o elemento para cima quando o mouse passa por cima */
+  background-color: #f261a5; /* Cor de fundo rosa quando o mouse está sobre o elemento */
+  font-size: 20px;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes moveProdutos {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+    border-radius: 10px;
+  }
+}
