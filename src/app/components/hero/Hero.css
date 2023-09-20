@@ -4,7 +4,6 @@
 /* Hero.css */
 
 .hero {
-  background: linear-gradient(0deg, #1a1a33, rgba(26, 32, 44, 0.99));
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -61,7 +60,7 @@
 
 .employee:hover {
   transform: translateY(-5px); /* Move o elemento para cima quando o mouse passa por cima */
-  background-color: #f261a5; /* Cor de fundo rosa quando o mouse está sobre o elemento */
+  background-color: #f261a5; /* Cor de fundo rosa quando o mouse está sobre o elemento  */ 
 }
   
   .hero h1 {
@@ -85,7 +84,7 @@
   }
   
   .hero h2 {
-    color: #E61B7Bad; /* Cor desejada para os subtítulos */
+    color: #E61B7B; /* Cor desejada para os subtítulos */
     font-family: 'Verdana', sans-serif; /* Fonte desejada para os subtítulos */
     font-size: 24px; /* Tamanho desejado para os subtítulos */
 

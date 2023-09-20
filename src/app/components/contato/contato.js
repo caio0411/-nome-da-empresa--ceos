@@ -5,8 +5,8 @@ function Contato() {
   return (
     <div className='caixa_maior'>
       <div className="contato">
-        <h1>Entre em contato conosco</h1>
-        <p>Faça um orçamento:</p>
+        <h1 className="titulo">Entre em contato conosco</h1>
+        <p className="paragrafo">Faça um orçamento:</p>
         <form>
           <div className="input-container">
             <label htmlFor="name">Nome:</label>
@@ -24,11 +24,11 @@ function Contato() {
             <label htmlFor="message">Mensagem:</label>
             <textarea id="message" name="message"></textarea>
           </div>
-          <button type="submit">Enviar</button>
+          <button type="submit" className='envio'>Enviar</button>
         </form>
       </div>
       <div className='imagem'>
-        plau
+        -- Imagem --
       </div>
     </div>
   );

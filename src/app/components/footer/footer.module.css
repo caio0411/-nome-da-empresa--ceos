@@ -2,7 +2,7 @@
 .footer{
     height: 300px;
     width: 100%;
-    background-color: rgba(26, 32, 44, 0.99);
+    background-color: rgba(15, 19, 26, 0.5);
     color:#fefefe;
     font-family: aktiv-grotesk, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.8;
@@ -22,6 +22,6 @@
     padding-bottom: 5px;
     border-radius: 10px;
 }
-.mensagem_logo{
-    font-family: ;
+.lista{
+    list-style: none;
 }
