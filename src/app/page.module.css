@@ -207,5 +207,7 @@
     grid-template-columns: repeat(2, 50%);
   }
 }
-
+.separar{
+  margin: 50px;
+}
 

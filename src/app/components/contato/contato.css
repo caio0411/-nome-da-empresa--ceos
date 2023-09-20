@@ -1,0 +1,106 @@
+/* Contato.css */
+
+/* Estilizando o contêiner principal */
+.caixa_maior{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 50px;
+}
+.imagem{
+  color: #fefefe;
+}
+.contato{
+  max-width: 600px;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(26, 32, 44, 1);
+  border-radius: 10px;
+  box-shadow: 3px;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Adicionando efeito de escala no hover */
+.input-container:hover {
+  transform: scale(1.03); /* Aumenta o tamanho em 5% no hover */
+}
+
+/* Estilizando o título */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Mudando a cor do título no hover */
+div:hover h1 {
+  color: #e61b7b; /* Cor diferente no hover */
+}
+
+/* Estilizando o parágrafo */
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ff6a00;
+}
+
+/* Estilizando os rótulos e campos de entrada */
+.input-container {
+  margin-bottom: 8px;
+  text-align: left;
+  color: #6b6666
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #f5f5f5;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: black;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Adicionando efeito de borda colorida no foco */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #e61b7b; /* Cor da borda ao focar */
+  
+}
+
+/* Permitir redimensionamento vertical da caixa de texto da mensagem */
+textarea {
+  resize: vertical; /* Permite apenas o redimensionamento vertical */
+}
+
+/* Estilizando o botão de envio */
+button {
+  background-color: #e61b7b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Adicionando efeito de cor no hover do botão */
+button:hover {
+  background-color: #95114f; /* Cor diferente no hover */
+}

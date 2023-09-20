@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700);
+.footer{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(26, 32, 44, 0.99);
+    color:#fefefe;
+    font-family: aktiv-grotesk, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    padding: 50px 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    font-family: 'Poppins', Lato, Helvetica Neue, Quicksand;
+    font-size: 38px;
+    font-weight: bold;
+    color: #fefefe;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+.mensagem_logo{
+    font-family: ;
+}
