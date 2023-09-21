@@ -4,6 +4,7 @@
 /* Hero.css */
 
 .hero {
+  margin-top: 90px;
   padding: 20px;
   display: flex;
   justify-content: center;

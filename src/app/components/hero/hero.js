@@ -34,7 +34,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <h2>Nossa Equipe</h2>
+        <h2 id='equipe'>Nossa Equipe</h2>
         <div className="employee-grid">
           <div className="employee">
             <Image src="/images/funcionario2.svg" width={150} height={150} alt="João Silva - Técnico Sênior" />

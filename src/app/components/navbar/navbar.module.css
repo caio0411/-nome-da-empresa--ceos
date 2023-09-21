@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700);
 .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     width: 100%;
     height: 100px;
     padding-right: 70px;
@@ -45,7 +48,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-family: 'Poppins', Lato, Helvetica Neue, Quicksand;
     font-size: 40px;
     font-weight: bold;
