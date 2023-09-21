@@ -8,7 +8,7 @@
   width: 100vw;
   padding: 50px;
 }
-.imagem{
+div.imagem_ctt{
   color: #fefefe;
   width: 50%;
   display: flex;
@@ -19,16 +19,11 @@
   max-width: 600px;
   margin: 0;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   background-color: rgba(15, 19, 26, 0.5);
   border-radius: 10px;
   box-shadow: 3px;
   transition: transform 0.4s ease-in-out;
-}
-
-/* Adicionando efeito de escala no hover */
-.input-container:hover {
-  transform: scale(1.03); /* Aumenta o tamanho em 5% no hover */
 }
 
 /* Estilizando o título */
@@ -48,7 +43,7 @@
 .paragrafo {
   font-size: 18px;
   margin-bottom: 20px;
-  color: #ff6a00;
+  color: #e61b7b
 }
 
 /* Estilizando os rótulos e campos de entrada */
@@ -56,6 +51,11 @@
   margin-bottom: 8px;
   text-align: left;
   color: #6b6666
+}
+
+/* Adicionando efeito de escala no hover */
+.input-container:hover {
+  transform: scale(1.03); /* Aumenta o tamanho em 5% no hover */
 }
 
 label {
@@ -69,7 +69,7 @@ input[type="text"],
 input[type="tel"],
 input[type="email"],
 textarea {
-  width: 100%;
+  width: 550px;
   padding: 7px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -97,11 +97,12 @@ textarea {
   background-color: #e61b7b;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 252.5px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
 }
 
 /* Adicionando efeito de cor no hover do botão */
