@@ -4,22 +4,28 @@
 .caixa_maior{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100vw;
   padding: 50px;
 }
-.imagem{
-  color: #fefefe;
-  width: 50%;
+.imagem_ctt{
+  max-width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.img{
+  width: 100%;
+  height: 100%;
+  margin-left: 80px;
+}
 .contato{
+  width: 100%;
   max-width: 600px;
   margin: 0;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   background-color: rgba(15, 19, 26, 0.5);
   border-radius: 10px;
   box-shadow: 3px;
@@ -28,7 +34,7 @@
 
 /* Adicionando efeito de escala no hover */
 .input-container:hover {
-  transform: scale(1.03); /* Aumenta o tamanho em 5% no hover */
+  transform: scale(1.03); /* Aumenta o tamanho em 3% no hover */
 }
 
 /* Estilizando o título */
@@ -48,7 +54,7 @@
 .paragrafo {
   font-size: 18px;
   margin-bottom: 20px;
-  color: #ff6a00;
+  color: #e61b7b;
 }
 
 /* Estilizando os rótulos e campos de entrada */
@@ -89,22 +95,40 @@ textarea:focus {
 
 /* Permitir redimensionamento vertical da caixa de texto da mensagem */
 textarea {
-  resize: vertical; /* Permite apenas o redimensionamento vertical */
+  resize: vertical;
+  width: 100%; /* Permite apenas o redimensionamento vertical */
 }
 
 /* Estilizando o botão de envio */
 .envio {
+  width: 100%;
+  padding: 15px;
+  height: 43px;
   background-color: #e61b7b;
   color: #fff;
   border: none;
-  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
 }
 
 /* Adicionando efeito de cor no hover do botão */
 .envio:hover {
   background-color: #95114f; /* Cor diferente no hover */
+}
+@media (max-width: 1162px){
+  .caixa_maior{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contato{
+    max-width: 600px;
+  }
+  .img{
+    margin-left: 0;
+    margin-top: 50px;
+  }
 }
