@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contato.css';
+import Image from 'next/image';
 
 function Contato() {
   return (
@@ -27,8 +28,8 @@ function Contato() {
           <button type="submit" className='envio'>Enviar</button>
         </form>
       </div>
-      <div className='imagem'>
-        -- Imagem --
+      <div className='imagem_ctt'>
+        <Image src="images/contato_imagem.svg" width={750} height={550} alt="Imagem do contato" /> 
       </div>
     </div>
   );
