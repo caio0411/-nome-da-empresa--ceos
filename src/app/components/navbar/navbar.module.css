@@ -104,6 +104,10 @@
     background-color: #fff;
     transition: all 0.3s ease-in-out;
 }
+.faleconosco2{
+    display: none;
+}
+
 @media (max-width:1160px){
     .hamburguer{
         display: block;
@@ -126,16 +130,10 @@
     }
     .faleconosco{
         display: none;
-        position: relative;
-        top: 100px;
-        border: 0;
-        background-color: rgba(15, 19, 26, 0.9);
-        flex-direction: column;
-        width: 80%;
-        transition: 0.3s;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.5s;
+        
+    }
+    .faleconosco2{
+        display: block;
     }
     .menu2{
         display: flex;
@@ -163,5 +161,9 @@
     }
     .navbar{
         padding-left: 0;
+    }
+
+    .menu2{
+        margin-left:40px;
     }
 }
