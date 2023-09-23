@@ -14,41 +14,52 @@ export default function Hero() {
             <div className='hero-content'>
                 <div className='intro'>
                     <h1 className='titulos'>
-                    Serviços Profissionais de Manutenção e Suporte Técnico
+                        Serviços Profissionais de Manutenção e Suporte Técnico
                     </h1>
 
                     <p className='intro-texto'>
-                    Nós somos especializados em manutenção e reparo de computadores e dispositivos eletrônicos. Oferecemos soluções rápidas e confiáveis para manter seus sistemas funcionando perfeitamente.
+                        Nós somos especializados em manutenção e reparo de computadores e dispositivos eletrônicos. Oferecemos soluções rápidas e confiáveis para manter seus sistemas funcionando perfeitamente.
                     </p>
                 </div>
 
                 <div className='nossos-servicos'>
                     <h1 className='titulos'>Nossos Serviços</h1>
                     <div className='produtos-grid'>
-                        <div className='produto' /*onClick={scrollPageUp}*/>
-                            <Image src= "/images/manutencao.svg" width={70} height={70} alt="Manutenção Preventiva" />
-                            <h3 className='produtos-style'>Manutenção Preventiva</h3>
-                        </div>
+                        <a href='#manutencao'>
+                            <div className='produto'>
+
+                                <Image src="/images/manutencao.svg" width={70} height={70} alt="Manutenção Preventiva" />
+                                <h3 className='produtos-style'>Manutenção Preventiva</h3>
+                            </div>
+                        </a>
+                        <a href='#reparo'>
                         <div className='produto'>
-                            <Image src= "/images/software.svg" width={70} height={70} alt="Reparo de Hardware e Software" />
+                            <Image src="/images/software.svg" width={70} height={70} alt="Reparo de Hardware e Software" />
                             <h3 className='produtos-style'>Reparo de Hardware e Software</h3>
                         </div>
+                        </a>
+                        <a href='#atualizacao'>
                         <div className='produto'>
-                            <Image src= "/images/atualizacao.svg" width={70} height={70} alt="Atualização de Componentes" />
+                            <Image src="/images/atualizacao.svg" width={70} height={70} alt="Atualização de Componentes" />
                             <h3 className='produtos-style'>Atualização de Componentes</h3>
                         </div>
+                        </a>
+                        <a href='#virus'>
                         <div className='produto'>
-                            <Image src= "/images/virus.svg" width={70} height={70} alt="Remoção de Vírus e Malware" />
+                            <Image src="/images/virus.svg" width={70} height={70} alt="Remoção de Vírus e Malware" />
                             <h3 className='produtos-style'>Remoção de Vírus e Malware</h3>
                         </div>
+                        </a>
+                        <a href='#suporte'>
                         <div className='produto'>
-                            <Image src= "/images/remoto.svg" width={70} height={70} alt="Suporte Técnico Remoto" />
+                            <Image src="/images/remoto.svg" width={70} height={70} alt="Suporte Técnico Remoto" />
                             <h3 className='produtos-style'>Suporte Técnico Remoto</h3>
                         </div>
+                        </a>
                     </div>
                 </div>
 
-                <div className='nossa-equipe'>
+                <div className='nossa-equipe' id='equipe'>
                     <h1 className='titulos'>Nossa Equipe</h1>
                     <div className='equipe-grid'>
                         <div className='funcionario'>
@@ -69,10 +80,10 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className='sobre-nos'>
+                <div className='sobre-nos' id='sobre_nozes'>
                     <h1 className='titulos'>Sobre Nós</h1>
                     <div className='sobre-nos-conteudo'>
-                        <Image src="/images/sobre_nos.svg" width={500} height={500} alt="Sobre a 1-click" />
+                        <img src="/images/sobre_nos.svg" className='img_hero' alt="Sobre a 1-click" />
                         <div className='sobre-nos-texto'>
                             <p>   Há muitos anos atrás, na ensolarada cidade de Fortaleza, no estado do Ceará, Brasil, três jovens empreendedores, João Silva, Maria Santos e Pedro Oliveira, embarcaram em uma jornada que mudaria suas vidas e o mundo da tecnologia para sempre. Enquanto estudantes de Ciência da Computação na Universidade Federal do Ceará, esses três amigos compartilhavam uma paixão em comum: computadores.A chama da inovação ardia em seus corações enquanto eles exploravam as complexidades dos sistemas, software e hardware. Em um laboratório de informática na universidade, eles se reuniam após as aulas para discutir ideias e vislumbrar um futuro no qual a tecnologia pudesse ser acessível a todos.</p>
                             <br />
@@ -85,13 +96,13 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className='oque-fazemos'>
+                <div className='oque-fazemos' id='nossos_servicos'>
                     <h1 className='titulos'>O Que Fazemos</h1>
                     <div className='oque-fazemos-produtos'>
-                        <div className='produtos-detalhes'>
-                            <Image src= "/images/manutencao.svg" width={500} height={500} alt="Manutenção Preventiva"/>
-                            <div className='produtos-detalhes-texto'>
-                                <h2 className='subtitulo-produtos'>Serviço de Manutenção Preventiva</h2>
+                        <div className='produtos-detalhes1'>
+                            <img src="/images/manutencao.svg" className='img_hero' alt="Manutenção Preventiva" />
+                            <div className='produtos-detalhes-p1'>
+                                <h2 id='manutencao'className='subtitulo-produtos'>Serviço de Manutenção Preventiva</h2>
                                 <p className='texto-produtos'>Na 1-Click, acreditamos que a prevenção é a chave para garantir o desempenho consistente e confiável dos seus sistemas e equipamentos de tecnologia. Nosso serviço de Manutenção Preventiva foi projetado para ajudar a manter seus ativos de TI em excelente estado de funcionamento, reduzindo o risco de falhas inesperadas e interrupções nos negócios.</p>
                                 <br />
                                 <h2 className='subtitulo-produtos'>O que oferecemos:</h2>
@@ -105,9 +116,9 @@ export default function Hero() {
                                 </ul>
                             </div>
                         </div>
-                        <div className='produtos-detalhes'>
-                            <div className='produtos-detalhes-texto'>
-                                <h2 className='subtitulo-produtos'>Reparo de Hardware e Software</h2>
+                        <div className='produtos-detalhes2'>
+                            <div className='produtos-detalhes-p2'>
+                                <h2 id='reparo' className='subtitulo-produtos'>Reparo de Hardware e Software</h2>
                                 <p className='texto-produtos'>Na 1-Click, entendemos que problemas de software e hardware podem surgir a qualquer momento e impactar significativamente a eficiência e a produtividade dos nossos clientes. É por isso que oferecemos um abrangente serviço de reparo de software e hardware, projetado para resolver esses problemas de maneira rápida e eficaz.</p>
                                 <br />
                                 <h2 className='subtitulo-produtos'>O que oferecemos:</h2>
@@ -120,12 +131,12 @@ export default function Hero() {
                                     <li>Limpeza e Manutenção: A manutenção regular do hardware é essencial para prolongar a vida útil do dispositivo. Realizamos limpeza interna, remoção de poeira e otimização de sistemas de refrigeração.</li>
                                 </ul>
                             </div>
-                            <Image src= "/images/software.svg" width={500} height={500} alt="Reparo de Hardware e Software" />
+                            <img src="/images/software.svg" className='img_hero' alt="Reparo de Hardware e Software" />
                         </div>
-                        <div className='produtos-detalhes'>
-                            <Image src= "/images/atualizacao.svg" width={500} height={500} alt="Atualização de Componentes" />
-                            <div className='produtos-detalhes-texto'>
-                                <h2 className='subtitulo-produtos'>Serviço de Atualização de Componentes</h2>
+                        <div className='produtos-detalhes3'>
+                            <img src="/images/atualizacao.svg" className='img_hero' alt="Atualização de Componentes" />
+                            <div className='produtos-detalhes-p3'>
+                                <h2 id='atualizacao' className='subtitulo-produtos'>Serviço de Atualização de Componentes</h2>
                                 <p className='texto-produtos'>Na 1-Click, estamos comprometidos em manter seu hardware e software atualizados para garantir o desempenho ideal e a segurança dos seus sistemas. Nosso serviço de atualização de componentes foi projetado para oferecer uma solução completa e eficaz para manter seu ambiente tecnológico sempre competitivo e seguro.</p>
                                 <br />
                                 <h2 className='subtitulo-produtos'>O que oferecemos:</h2>
@@ -137,9 +148,9 @@ export default function Hero() {
                                 </ul>
                             </div>
                         </div>
-                        <div className='produtos-detalhes'>
-                            <div className='produtos-detalhes-texto'>
-                                <h2 className='subtitulo-produtos'>Remoção de Virus e Malware</h2>
+                        <div className='produtos-detalhes4'>
+                            <div className='produtos-detalhes-p4'>
+                                <h2 id='virus' className='subtitulo-produtos'>Remoção de Virus e Malware</h2>
                                 <p className='texto-produtos'>Na 1-Click, compreendemos a gravidade das ameaças de vírus e malware para a segurança e a integridade dos sistemas de nossos clientes. Nossos serviços especializados de remoção de vírus e malware são projetados para detectar, eliminar e prevenir essas ameaças, garantindo a proteção dos seus sistemas e dados.</p>
                                 <br />
                                 <h2 className='subtitulo-produtos'>O que oferecemos:</h2>
@@ -152,12 +163,12 @@ export default function Hero() {
                                     <li>Monitoramento Contínuo:Oferecemos serviços de monitoramento contínuo para identificar e lidar com ameaças em tempo real, garantindo a segurança contínua dos seus sistemas.</li>
                                 </ul>
                             </div>
-                            <Image src= "/images/virus.svg" width={500} height={500} alt="Remoção de Vírus e Malware" />
+                            <img src="/images/virus.svg" className='img_hero' alt="Remoção de Vírus e Malware" />
                         </div>
-                        <div className='produtos-detalhes'>
-                            <Image src= "/images/remoto.svg" width={500} height={500} alt="Suporte Técnico Remoto" />
-                            <div className='produtos-detalhes-texto'>
-                                <h2 className='subtitulo-produtos'>Suporte Técnico Remoto</h2>
+                        <div className='produtos-detalhes5'>
+                            <img src="/images/remoto.svg" className='img_hero' alt="Suporte Técnico Remoto" />
+                            <div className='produtos-detalhes-p5'>
+                                <h2 id='suporte' className='subtitulo-produtos'>Suporte Técnico Remoto</h2>
                                 <p className='texto-produtos'>Na 1-Clicl, compreendemos que problemas técnicos podem surgir a qualquer momento e afetar a produtividade e eficiência dos nossos clientes. Nosso serviço de suporte técnico remoto foi projetado para oferecer assistência imediata e eficaz para resolver questões tecnológicas, independentemente de sua localização.</p>
                                 <br />
                                 <h2 className='subtitulo-produtos'>O que oferecemos:</h2>
