@@ -31,9 +31,10 @@ export default function NavBar() {
             </div>
             <container className={`${styles.menu} ${ativo ? styles.menu : styles.menu2}`}>
                 <div><Link href='#inicio'>Início</Link></div>
-                <div><a href='#'>Nossos Serviços</a></div>
+                <div><a href='#nossos_servicos'>O que fazemos</a></div>
                 <div><a href='#equipe'>Equipe</a></div>
-                <div><a href='#'>Sobre nós</a></div>
+                <div><a href='#sobre_nozes'>Sobre nós</a></div>
+                <div className={styles.faleconosco2}><a href='#contato'>Fale conosco</a></div>
             </container>
             <button className={styles.faleconosco}><a href='#contato'>Fale Conosco</a></button>
             <div
