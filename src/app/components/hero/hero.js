@@ -137,7 +137,7 @@ export default function Hero() {
                             <img src="/images/atualizacao.svg" className='img_hero' alt="Atualização de Componentes" />
                             <div className='produtos-detalhes-p3'>
                                 <h2 id='atualizacao' className='subtitulo-produtos'>Serviço de Atualização de Componentes</h2>
-                                <p className='texto-produtos'>Na 1-Click, estamos comprometidos em manter seu hardware e software atualizados para garantir o desempenho ideal e a segurança dos seus sistemas. Nosso serviço de atualização de componentes foi projetado para oferecer uma solução completa e eficaz para manter seu ambiente tecnológico sempre competitivo e seguro.</p>
+                                <p className='texto-produtos'>Na ONECLICK, estamos comprometidos em manter seu hardware e software atualizados para garantir o desempenho ideal e a segurança dos seus sistemas. Nosso serviço de atualização de componentes foi projetado para oferecer uma solução completa e eficaz para manter seu ambiente tecnológico sempre competitivo e seguro.</p>
                                 <br />
                                 <h2 className='subtitulo-produtos'>O que oferecemos:</h2>
                                 <ul className='texto-produtos'>
@@ -151,7 +151,7 @@ export default function Hero() {
                         <div className='produtos-detalhes4'>
                             <div className='produtos-detalhes-p4'>
                                 <h2 id='virus' className='subtitulo-produtos'>Remoção de Virus e Malware</h2>
-                                <p className='texto-produtos'>Na 1-Click, compreendemos a gravidade das ameaças de vírus e malware para a segurança e a integridade dos sistemas de nossos clientes. Nossos serviços especializados de remoção de vírus e malware são projetados para detectar, eliminar e prevenir essas ameaças, garantindo a proteção dos seus sistemas e dados.</p>
+                                <p className='texto-produtos'>Na ONECLICK, compreendemos a gravidade das ameaças de vírus e malware para a segurança e a integridade dos sistemas de nossos clientes. Nossos serviços especializados de remoção de vírus e malware são projetados para detectar, eliminar e prevenir essas ameaças, garantindo a proteção dos seus sistemas e dados.</p>
                                 <br />
                                 <h2 className='subtitulo-produtos'>O que oferecemos:</h2>
                                 <ul className='texto-produtos'>
