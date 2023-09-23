@@ -13,9 +13,9 @@ function Footer() {
             <div>
                 <h1>Links</h1>
                 <ul className={styles.lista}>
-                    <Link href="#"><li>Início</li></Link>
-                    <a href="#"><li>Serviços</li></a>
-                    <a href="#"><li>Sobre nós</li></a>
+                    <Link href="#inicio"><li>Início</li></Link>
+                    <a href="#nossos_servicos"><li>O que fazemos</li></a>
+                    <a href="#sobre_nozes"><li>Sobre nós</li></a>
                 </ul>
             </div>
             <div>
