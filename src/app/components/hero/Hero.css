@@ -6,6 +6,7 @@
     height: 100%;
     flex-direction: column;
     position: static;
+    margin-top: 100px;
 }
 
 .hero-content {
@@ -44,15 +45,15 @@
 
 .produto {
     text-align: center;
-    width: 70; /* Largura desejada para o retângulo de fundo */
-    height: 130px; /* Altura desejada para o retângulo de fundo */
+    width: 300px; /* Largura desejada para o retângulo de fundo */
+    height: 140px; /* Altura desejada para o retângulo de fundo */
     border-radius: 50px; /* Bordas arredondadas */
     align-items: center; /* Pode ser usado para centralizar a imagem verticalmente */
     justify-content: center; /* Pode ser usado para centralizar a imagem horizontalmente */
     background-color: #606075; /* Cor de fundo cinza */
     color: white;
     padding: 10px 20px;
-    font-size: 12px;
+    font-size: 19px;
     transition: transform 0.4s, background-color 0.2s; /* Adicione uma transição suave para 'transform' e 'background-color' */
     margin: 10px; /* Adicione margem entre os elementos */
 }
@@ -91,7 +92,7 @@
 .nome-funcionario{
     color:white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    fint-size: 20px;
+    font-size: 20px;
 }
 .funcao-funcionario{
     color: #E61B7B; /* Cor desejada para os parágrafos */
@@ -100,14 +101,24 @@
 }
 
 
+.sobre_nos{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
 .sobre-nos-conteudo{
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
+    display: flex;    
     align-items: center;
+    justify-content: center;
     height: auto; /* Defina a altura como automática */
     /* Defina uma altura máxima */
     overflow-y: auto; /* Adicione uma barra de rolagem vertical, se necessário */
+}
+
+.img_hero{
+    width:50%;
+    
 }
 
 .sobre-nos-texto{
@@ -141,6 +152,31 @@
     align-items: center; /* Alinhar verticalmente ao centro */
 }
 
+.produtos-detalhes1{
+    display: flex; /* Usando flexbox para alinhar elementos lado a lado */
+    align-items: center; /* Alinhar verticalmente ao centro */
+}
+
+.produtos-detalhes2{
+    display: flex; /* Usando flexbox para alinhar elementos lado a lado */
+    align-items: center; /* Alinhar verticalmente ao centro */
+}
+
+.produtos-detalhes3{
+    display: flex; /* Usando flexbox para alinhar elementos lado a lado */
+    align-items: center; /* Alinhar verticalmente ao centro */
+}
+
+.produtos-detalhes4{
+    display: flex; /* Usando flexbox para alinhar elementos lado a lado */
+    align-items: center; /* Alinhar verticalmente ao centro */
+}
+
+.produtos-detalhes5{
+    display: flex; /* Usando flexbox para alinhar elementos lado a lado */
+    align-items: center; /* Alinhar verticalmente ao centro */
+}
+
 .produtos-detalhes-texto{
     margin-left: 10px;
     margin-top: 10px;
@@ -165,5 +201,61 @@
     to {
         transform: translateY(-20px);
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 1500px){
+    .sobre-nos-conteudo{
+        flex-direction: column-reverse;
+        margin-left:0;
+        margin-right: 0;
+    }
+
+    .img_hero{
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    .produtos-detalhes{
+        flex-direction: column;
+        margin-left:0;
+        margin-right: 0;
+    }
+    
+    
+    .sobre-nos-texto{
+        margin-left: 0;
+    }
+
+    .texto-produtos{
+        margin-left: 0;
+    }
+
+    .produtos-detalhes1{
+        flex-direction: column-reverse;
+    }
+
+    .produtos-detalhes2{
+        flex-direction: column;
+    }
+
+    .produtos-detalhes3{
+        flex-direction: column-reverse;
+    }
+
+    .produtos-detalhes4{
+        flex-direction: column;
+    }
+
+    .produtos-detalhes5{
+        flex-direction: column-reverse;
+    }
+
+
+    
+    @media (max-width: 464px){
+        h3.produtos-style{
+            font-size: 19px;
+        }
+
     }
 }
