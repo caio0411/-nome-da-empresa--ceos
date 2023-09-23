@@ -4,7 +4,7 @@ import './Contato.css';
 function Contato() {
   return (
     <div className='caixa_maior'>
-      <div className="contato">
+      <div className="contato" id='contato'>
         <h1 className="titulo">Entre em contato conosco</h1>
         <p className="paragrafo">Faça um orçamento:</p>
         <form>
